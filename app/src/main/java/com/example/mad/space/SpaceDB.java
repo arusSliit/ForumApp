@@ -16,12 +16,16 @@ import java.util.ArrayList;
 
 public class SpaceDB {
 
+    //default constructor created
+    public SpaceDB() {
+    }
+
     final private static DatabaseReference ref = FirebaseDatabase.getInstance("https://mad-sliit-92d31-default-rtdb.firebaseio.com/").getReference("spaces");
 
     public static DatabaseReference getRef() {
         return ref;
     }
-
+    //overloaded constructor created
     public static void newSpace(String userID, String name, String description){
         Space spaceObj = new Space();
         String id = ref.push().getKey();
@@ -48,6 +52,7 @@ public class SpaceDB {
             }
         });
     }
+    //getting the value from the db annd add to the profile
     public static void populateQuestionsOfSpace(ArrayList<Question> questions, RecyclerView.Adapter adapter, String spaceID){
         QuestionDB.getRef().orderByChild("spaceID").equalTo(spaceID).addValueEventListener(new ValueEventListener() {
             @Override
@@ -59,6 +64,7 @@ public class SpaceDB {
                 System.out.println(questions.size());
                 adapter.notifyDataSetChanged();
             }
+            //default method
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
