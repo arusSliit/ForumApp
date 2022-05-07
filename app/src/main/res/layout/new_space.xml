@@ -12,7 +12,7 @@
         android:layout_marginTop="20dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:text="Name"
+        android:hint="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,7 +25,7 @@
         android:textAlignment="center"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
-        android:text="Description"
+        android:hint="Description"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/space_title"
         app:layout_constraintHorizontal_bias="0.48"
