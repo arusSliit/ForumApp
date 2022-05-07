@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MAD</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Profile</string>
+    <string name="title_notifications">Spaces</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_questions">Hello Questions</string>
+    <string name="hello_spaces">Hello Spaces</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
