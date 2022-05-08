@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.answer.Answers" >
 
+    <!--List comment-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/commentList"
         android:layout_width="match_parent"
