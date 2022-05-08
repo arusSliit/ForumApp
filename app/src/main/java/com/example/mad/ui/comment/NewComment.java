@@ -14,6 +14,7 @@ import com.example.mad.ui.question_and_answer.QuestionAndAnswer;
 import com.example.mad.user.User;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
+//Add new comment
 public class NewComment extends BottomSheetDialogFragment {
 
     @Override
