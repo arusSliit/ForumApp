@@ -17,9 +17,11 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+//Store comments function
 public class CommentDB {  //comment DB function
     final private static DatabaseReference ref = FirebaseDatabase.getInstance("https://mad-sliit-92d31-default-rtdb.firebaseio.com/").getReference("comments");
 
+    //New comment
     public static void newComment(String userID,String questionID,String comment,int commentCount){
         Comment commentObj = new Comment();
         String id = ref.push().getKey();
@@ -30,6 +32,7 @@ public class CommentDB {  //comment DB function
         ref.child(id).setValue(commentObj);
         updateCommentCount(questionID,commentCount+1);
     }
+    //update comment counts
     public static void updateCommentCount(String questionID,int commentCount){
         HashMap<String,Object> map = new HashMap();
         map.put("commentCount",commentCount);
