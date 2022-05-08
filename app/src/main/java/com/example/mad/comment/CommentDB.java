@@ -17,7 +17,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class CommentDB {
+public class CommentDB {  //comment DB function
     final private static DatabaseReference ref = FirebaseDatabase.getInstance("https://mad-sliit-92d31-default-rtdb.firebaseio.com/").getReference("comments");
 
     public static void newComment(String userID,String questionID,String comment,int commentCount){
