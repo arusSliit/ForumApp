@@ -2,7 +2,7 @@ package com.example.mad.answer;
 
 public class Answer {
 
-    private String userID; //tt
+    private String userID;
 
     public String getUserID() {
         return userID;
