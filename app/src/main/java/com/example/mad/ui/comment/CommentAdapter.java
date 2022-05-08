@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentViewHolder> {
 
-    private ArrayList<Comment> list;
+    private ArrayList<Comment> list;//store list of value
 
     public CommentAdapter(ArrayList<Comment> comments){
         list = comments;
@@ -48,14 +48,14 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
 
     public static class CommentViewHolder extends RecyclerView.ViewHolder{
 
-        TextView comment,userName;
-        ImageView profilePhoto;
+        TextView comment,userName; //Comment and UserName
+        ImageView profilePhoto;//Imaage
 
         public CommentViewHolder(@NonNull View itemView) {
             super(itemView);
-            comment = itemView.findViewById(R.id.cmt);
-            userName = itemView.findViewById(R.id.user_name_cmt);
-            profilePhoto = itemView.findViewById(R.id.profile_pic_cmt);
+            comment = itemView.findViewById(R.id.cmt);//find comment id
+            userName = itemView.findViewById(R.id.user_name_cmt);//Find user name
+            profilePhoto = itemView.findViewById(R.id.profile_pic_cmt);//Find profile photo
         }
     }
 }
