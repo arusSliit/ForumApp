@@ -2,10 +2,10 @@ package com.example.mad.comment;
 
 public class Comment {
 
-    private String userID;
-    private String questionID;
-    private String comment;
-    private String commentID;
+    private String userID;//user ID
+    private String questionID;// Question ID
+    private String comment; //Comment
+    private String commentID;//Comment ID
 
     public String getUserID() {
         return userID;
