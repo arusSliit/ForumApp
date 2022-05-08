@@ -6,6 +6,7 @@ import com.example.mad.comment.CommentDB;
 
 import java.util.ArrayList;
 
+//Display entire comments
 public class CommentViewModel extends ViewModel {
 
     private ArrayList<Comment> comments;
