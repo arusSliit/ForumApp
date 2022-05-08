@@ -39,6 +39,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        holder.setIsRecyclable(false);
         Question q = list.get(position);
         UserDB.setNameAndPhoto(q.getUserID(),holder.userImage,holder.userName,this);
         holder.questionTitle.setText(q.getTitle());
