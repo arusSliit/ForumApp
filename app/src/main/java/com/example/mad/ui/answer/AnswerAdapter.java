@@ -27,13 +27,13 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.AnswerHold
     }
     @NonNull
     @Override
-    public AnswerAdapter.AnswerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AnswerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.answer,parent,false);
         return new AnswerHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AnswerAdapter.AnswerHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AnswerHolder holder, int position) {
         Answer a = answers.get(position);
         holder.answer.setText(a.getAnswer());
         UserDB.setNameAndPhoto(a.getUserID(),holder.profileImg,holder.userName,this);

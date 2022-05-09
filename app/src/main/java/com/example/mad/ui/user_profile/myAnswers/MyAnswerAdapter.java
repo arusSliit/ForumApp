@@ -35,9 +35,9 @@ public class MyAnswerAdapter extends RecyclerView.Adapter<MyAnswerAdapter.MyAnsw
     }
     @NonNull
     @Override
-    public MyAnswerAdapter.MyAnswerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyAnswerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_answer,parent,false);
-        return new MyAnswerAdapter.MyAnswerHolder(v);
+        return new MyAnswerHolder(v);
     }
 
     @Override

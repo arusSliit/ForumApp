@@ -26,7 +26,7 @@ public class SpaceAdapter extends RecyclerView.Adapter<SpaceAdapter.SpaceViewHol
     public SpaceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.space,parent,false);
 
-        return  new SpaceAdapter.SpaceViewHolder(v);
+        return  new SpaceViewHolder(v);
     }
 
     @Override

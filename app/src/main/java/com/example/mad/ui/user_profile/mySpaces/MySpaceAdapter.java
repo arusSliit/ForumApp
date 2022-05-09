@@ -28,10 +28,10 @@ public class MySpaceAdapter extends RecyclerView.Adapter<MySpaceAdapter.MySpaceV
 
     @NonNull
     @Override
-    public MySpaceAdapter.MySpaceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MySpaceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_space,parent,false);
 
-        return  new MySpaceAdapter.MySpaceViewHolder(v);
+        return  new MySpaceViewHolder(v);
     }
 
     @Override
