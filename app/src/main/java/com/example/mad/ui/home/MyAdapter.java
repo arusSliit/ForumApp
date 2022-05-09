@@ -74,8 +74,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             userName = itemView.findViewById(R.id.question_card_user_name);
             userImage = itemView.findViewById(R.id.profile_pic_qsn);
             comment = itemView.findViewById(R.id.comment);
-            viewCount = itemView.findViewById(R.id.viewCount);
-            like = itemView.findViewById(R.id.like);
             question = itemView.findViewById(R.id.question);
         }
     }
